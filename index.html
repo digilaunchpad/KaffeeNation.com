@@ -934,7 +934,7 @@
     border-top: 1px solid var(--border);
     padding-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   .footer-copy {
@@ -942,11 +942,7 @@
     color: var(--text-muted);
     letter-spacing: 0.05em;
   }
-  .footer-made {
-    font-size: 0.72rem;
-    color: var(--text-muted);
-  }
-  .footer-made span { color: var(--gold); }
+
 
   /* ANIMATIONS */
   @keyframes fadeUp {
@@ -1259,22 +1255,21 @@
         </div>
         <div class="contact-row">
           <div class="contact-icon">✉️</div>
-          <span>hello@thekaffee.nation</span>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="563e333a3a3916223e333d3730303333783837223f3938">[email&#160;protected]</a></span>
         </div>
       </div>
       <div class="reveal reveal-delay-4" style="margin-top: 2.5rem;">
-        <a href="tel:+91 087671 74400" class="btn-primary"><span>Reserve a Table</span></a>
+        <a href="tel:+910876717440" class="btn-primary"><span>Reserve a Table</span></a>
       </div>
     </div>
     <div class="reveal reveal-delay-2">
       <div class="map-container">
-        
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.0!2d72.8777!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA0JzMzLjYiTiA3MsKwNTInMzkuNyJF!5e0!3m2!1sen!2sin!4v1234567890"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1!2d73.1285!3d19.2403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7952c8ce7f2b9%3A0x5da5b2b9c5c8c5c0!2sIndira%20Nagar%2C%20Kalyan%2C%20Maharashtra%20421301!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
           allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          title="THE KAFFEE NATION Location">
+          title="THE KAFFEE NATION — Kalyan, Maharashtra">
         </iframe>
         <a href="https://share.google/vzb2DoEXiWXQiaXvE" target="_blank" class="map-overlay">Get Directions →</a>
       </div>
@@ -1327,16 +1322,16 @@
     <div class="footer-col">
       <div class="footer-col-title">Contact</div>
       <ul class="footer-links">
-        <li><a href="#">opposite Birla College Road, Indira Nagar</a></li>
+        <li><a href="#">opp. Birla College Road, Indira Nagar</a></li>
         <li><a href="#">Kalyan, Maharashtra 421301</a></li>
-        <li><a href="tel:+919876543210">+91 087671 74400</a></li>
+        <li><a href="tel:+910876717440">+91 087671 74400</a></li>
         <li><a href="mailto:hello@thekaffee.nation">hello@thekaffee.nation</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <p class="footer-copy">© 2024 THE KAFFEE NATION. All rights reserved.</p>
-    <p class="footer-made">Made with <span>♥</span> for coffee lovers</p>
+
   </div>
 </footer>
 
@@ -1346,7 +1341,7 @@
   <img id="lightboxImg" src="" alt="Gallery image">
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // CURSOR
 const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursorRing');
@@ -1542,14 +1537,4 @@ lightbox.addEventListener('click', e => {
   if (e.target === lightbox) { lightbox.classList.remove('open'); document.body.style.overflow = ''; }
 });
 
-// SCROLL REVEAL
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
-  });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-reveals.forEach(el => observer.observe(el));
-</script>
-</body>
-</html>
+// SCRO
